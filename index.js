@@ -6,13 +6,12 @@ const multer = require('multer');
 
 // Object maken voor de opslag en naam van de bestanden
 const storage = multer.diskStorage({
+  // cb = callback
   destination: (req, file, cb) => {
-    // cb = callback
     // Voor opslag van de bestanden op de server, zet je ze NIET in de public map
     cb(null, 'public/uploads/');
   },
   filename: (req, file, cb) => {
-    // cb = callback
     console.log(file);
     cb(null, Date.now() + path.extname(file.originalname));
   },
