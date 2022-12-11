@@ -1,0 +1,8 @@
+# General
+node_modules
+.env
+
+
+# exclude all uploads
+/public/uploads/*
+/uploads-on-server/*
