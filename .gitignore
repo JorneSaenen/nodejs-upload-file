@@ -6,3 +6,6 @@ node_modules
 # exclude all uploads
 /public/uploads/*
 /uploads-on-server/*
+
+!/public/uploads/.gitkeep
+!/uploads-on-server/.gitkeep
